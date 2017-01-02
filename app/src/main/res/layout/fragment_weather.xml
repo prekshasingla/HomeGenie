@@ -1,0 +1,159 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.prekshasingla.homegenie.Weather">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/detail_day_textview"
+            android:layout_width="wrap_content"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/separatorLine1"
+            android:layout_below="@id/detail_day_textview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detail_city_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/detail_high_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/detail_low_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/detail_rain_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/detail_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/detail_forecast_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/separatorLine2"/>
+
+        <TextView
+            android:id="@+id/detail_additional_info_textview"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Additional Information " />
+
+        <TextView
+            android:id="@+id/detail_humidity_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/detail_wind_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/detail_pressure_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:text="" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:focusable="true"
+        android:background="#424242"
+        android:textColor="#EEEEEE"
+        android:gravity="center"
+        android:text="No connection available"
+        />
+
+
+</FrameLayout>

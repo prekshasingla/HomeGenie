@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.prekshasingla.homegenie.AddPresetActivityFragment"
+    tools:showIn="@layout/activity_add_preset">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLayout1_addpreset">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20sp"
+            android:layout_weight="1"
+            android:id="@+id/text1_addpreset"
+            android:text="NAME"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/text1_addpreset"
+            android:id="@+id/edittext1_addpreset"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linLayout1_addpreset"
+        android:id="@+id/linLayout2_addpreset">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="20sp"
+            android:layout_weight="1"
+            android:id="@+id/text2_addpreset"
+            android:text="Start Time"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn1"
+                android:layout_height="wrap_content"
+                android:text="pick date"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn2"
+                android:layout_height="wrap_content"
+                android:text="pick Time"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/linLayout2_addpreset"
+        android:id="@+id/linLayout3_addpreset">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="20sp"
+
+            android:layout_weight="1"
+            android:id="@+id/text3_addpreset"
+            android:text="Start Time"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn3"
+                android:layout_height="wrap_content"
+                android:text="pick date"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn4"
+                android:text="pick Time"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/btn_addpreset_save"
+        android:text="SAVE"
+        android:layout_below="@+id/linLayout3_addpreset"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>
